@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Outils de conversion</title>
+</head>
+<body>
+    <div id="main">
+    <div class="header">
+        <h1 id="h1">Metric | Imperial Unit Conversion</h1>
+        <input id="input-number" type="number"/>
+        <button id="convert-btn">Convert ✅</button>
+        <button id="clear-btn">Clear All</button>
+    </div>
+    <div class="programConverter">
+        <div id="lengthConv">
+            <h2>Length (Meter/Feet)</h2>
+            <p class="details"><span id="valueToConvertOne-el"></span> meters = <span id="valueToConvertedOne-el">0.0</span> feet | <span id="valueConvertedIndexOne-el"></span> feet = <span id="valueIndexOne-el">0.0</span> meters</p>
+        </div>
+        <div id="volumeConv">
+            <h2>Volume (Liters/Gallons)</h2>
+            <p class="details"><span id="valueToConvertTwo-el"></span> liters = <span id="valueToConvertedTwo-el">0.0</span> gallons | <span id="valueConvertedIndexTwo-el"></span> gallons = <span id="valueIndexTwo-el">0.0</span> liters</p>
+        </div>
+        <div id="massConv">
+            <h2>Mass (Kilograms/Pounds)</h2>
+            <p class="details"><span id="valueToConvertThree-el"></span> kilos = <span id="valueToConvertedThree-el">0.0</span> pounds | <span id="valueConvertedIndexThree-el"></span> pounds = <span id="valueIndexThree-el">0.0</span> kilos</p>
+        </div>
+        <div id="massConv">
+            <h3>Past conversion (local storage)</h3>
+            <p class="details"><span id="pastConversionLocal-el"></span></p>
+        </div>
+        <div id="massConv">
+            <h3>Past conversion (firebase)</h3>
+            <p class="details"><span id="pastConversionFirebase-el"></span></p>
+        </div>
+    </div>
+</div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
